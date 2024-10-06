@@ -1,0 +1,199 @@
+body{
+  background: rgb(245,244,244);
+  background: linear-gradient(90deg, rgba(245,244,244,1) 51%, rgba(222,220,218,1) 100%);
+}
+
+.god-box{
+  margin: 1rem auto auto !important;
+  box-shadow: rgb(0 0 0 / 20%) 8px 8px 29px 20px;
+  display:block;
+}
+
+@media screen and (min-width: 1024px) {
+  .god-box {
+    max-width: 50%;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .god-box {
+    max-width: 100%;
+  }
+}
+
+.title-box{
+  margin-top: 2rem;
+  width: 55%;
+  text-align: center;
+  text-shadow: 1px 1px 20px #f9f2e1;
+  color: black;
+}
+
+.gallery-box{
+    background-image: url('assets/background4.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+.secondary-box{
+  background: rgb(236,225,225);
+  background: linear-gradient(90deg, rgba(236,225,225,1) 70%, rgba(226,227,225,1) 97%);
+  color: #000000;
+  background-position: center;
+}
+
+.secondary-box button{
+    color: white;
+    text-transform: uppercase;
+    border-radius: 40px;
+    padding: 10px;
+    background-color: #877070;
+}
+
+.secondary-box hr{
+  margin: auto;
+  width: 84%;
+  opacity: 0.7;
+}
+
+.wedding-detail{
+  padding-left: 5rem;
+  padding-right: 5rem;
+}
+
+.wedding-detail-title{
+  font-weight: 900;
+}
+
+.wedding-icon{
+  font-size: xx-large;
+  margin-bottom: 1rem;
+}
+
+.primary-box i{
+  font-size: xx-large;
+}
+
+/* Estilos generales */
+body {
+    font-family: 'century-gothic';
+    background-color: #ffffff;
+    color: #333;
+}
+
+/* Hero section (primera sección) */
+.hero-section {
+    height: 100vh;
+    background-image: url('assets/photos/ilustracion5.JPG');
+    background-size: cover;
+    background-position: center;
+    background-color: rgba(0, 0, 0, 0.6); /* Color semi-transparente */
+    padding-top: 7rem;
+    color: white;
+}
+
+/* Galería de fotos */
+.gallery img {
+    width: 100%;
+    max-height: 200px;
+    object-fit: cover;
+}
+
+/* Footer */
+footer {
+    background-color: #7b657c;
+    color: #fff;
+    padding: 20px;
+}
+
+footer a{
+  color: #fff;
+}
+
+footer i{
+  font-size: 35px;
+}
+
+.clickable{
+  cursor: pointer;
+}
+
+.primary-box{
+  background-color: #cab7cb;
+  color: #fff;
+}
+
+/* Countdown */
+:root {
+    --smaller: .75;
+  }
+  
+  * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  html, body {
+    height: 100%;
+    margin: 0;
+  }
+  
+  h1 {
+    font-weight: normal;
+    letter-spacing: .125rem;
+    text-transform: uppercase;
+  }
+  
+  li {
+    display: inline-block;
+    font-size: 1.5em;
+    list-style-type: none;
+    padding: 1em;
+    text-transform: uppercase;
+  }
+  
+  li span {
+    display: block;
+    font-size: 4.5rem;
+  }
+  
+  .emoji {
+    display: none;
+    padding: 1rem;
+  }
+  
+  .emoji span {
+    font-size: 4rem;
+    padding: 0 .5rem;
+  }
+  
+  @media all and (max-width: 768px) {
+    h1 {
+      font-size: calc(1.5rem * var(--smaller));
+    }
+    
+    li {
+      font-size: calc(1.125rem * var(--smaller));
+    }
+    
+    li span {
+      font-size: calc(3.375rem * var(--smaller));
+    }
+  }
+
+@font-face {
+    font-family: 'century-gothic'; /*a name to be used later*/
+    src: url('assets/fonts/century-gothic/centurygothic.ttf'); /*URL to font*/
+}
+
+@font-face {
+  font-family: 'century-gothic-bold'; /*a name to be used later*/
+  src: url('assets/fonts/century-gothic/centurygothic_bold.ttf'); /*URL to font*/
+}
+
+
+@font-face {
+  font-family: 'lowvetica'; /*a name to be used later*/
+  src: url('assets/fonts/lowvetica/Lowvetica.ttf'); /*URL to font*/
+}

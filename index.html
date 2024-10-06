@@ -3,81 +3,156 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Invitación de Matrimonio</title>
+    <title>Mathias y Catalina</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="assets/photos/ilustracion2.png">
 </head>
 <body>
-
-    <!-- Primera sección: Imagen grande con título y subtítulo -->
-    <div class="hero-section text-center text-white d-flex flex-column justify-content-center align-items-center">
-        <h1 class="display-4">¡Nos Casamos!</h1>
-        <p class="lead">Acompáñanos en este día tan especial</p>
-    </div>
-
-    <div class="container mt-5">
+    <div class="god-box">
+        <!-- Primera sección: Imagen grande con título y subtítulo -->
+        <div class="hero-section text-center d-flex flex-column align-items-center">
+            <div class="title-box">
+                <p class="lead">16 Noviembre 2024</p>
+                <h1 class="display-4">Mathias & Catalina</h1>
+                <p class="lead">¡Nos Casamos!</p>
+            </div>
+        </div>
 
         <!-- Cuenta regresiva -->
-        <section class="bg-white text-center p-4 mb-4 rounded shadow">
-            <h2>Faltan</h2>
+        <section class="text-center py-4 shadow primary-box">
             <div id="countdown">
-                <div id="timer" class="d-flex justify-content-center">
-                    <span id="days"></span> días 
-                    <span id="hours"></span> horas 
-                    <span id="minutes"></span> minutos 
-                    <span id="seconds"></span> segundos
-                </div>
+                <ul>
+                <li><span id="days"></span>Dias</li>
+                <li><span id="hours"></span>Horas</li>
+                <li><span id="minutes"></span>Minutos</li>
+                <li><span id="seconds"></span>Segundos</li>
+                </ul>
+            </div>
+            <div id="content" class="emoji">
+                <span>🥳</span>
+                <span>🎉</span>
+                <span>🎂</span>
             </div>
         </section>
 
-        <!-- Galería de fotos -->
+        <!-- Galería de fotos 
         <section class="gallery bg-light text-dark p-4 mb-4 rounded shadow">
-            <h2 class="text-center">Galería de fotos</h2>
+            <h2 class="text-center"></h2>
             <div class="row">
-                <div class="col-4"><img src="foto1.jpg" alt="Foto 1" class="img-fluid rounded"></div>
-                <div class="col-4"><img src="foto2.jpg" alt="Foto 2" class="img-fluid rounded"></div>
-                <div class="col-4"><img src="foto3.jpg" alt="Foto 3" class="img-fluid rounded"></div>
+                <div class="col-4"><img src="assets/photos/1.jpg" alt="Foto 1" class="img-fluid rounded"></div>
+                <div class="col-4"><img src="assets/photos/2.jpg" alt="Foto 2" class="img-fluid rounded"></div>
+                <div class="col-4"><img src="assets/photos/3.jpg" alt="Foto 3" class="img-fluid rounded"></div>
             </div>
-        </section>
+        </section>-->
 
-        <!-- Fecha del evento -->
-        <section class="bg-secondary text-white text-center p-4 mb-4 rounded shadow">
-            <h2>Fecha del evento</h2>
-            <p>25 de diciembre de 2024</p>
-        </section>
+        <div class="secondary-box shadow d-flex">
+            <div>
+                <img src="assets/photos/2.jpg" alt="Foto 2" class="img-fluid rounded">
+                <img src="assets/photos/3.jpg" alt="Foto 3" class="img-fluid rounded">
+            </div>
+            <div>
+                <img src="assets/photos/4.jpg" alt="Foto 3" class="img-fluid rounded">
+                <img src="assets/photos/5.jpg" alt="Foto 3" class="img-fluid rounded">
+            </div>
+        </div>
 
         <!-- Dress code -->
-        <section class="bg-dark text-white text-center p-4 mb-4 rounded shadow">
-            <h2>Código de vestimenta</h2>
-            <p>Formal - Black Tie</p>
+        <section class="primary-box text-white text-center p-4 shadow">
+            <i class="fa-solid fa-shirt pb-3"></i>
+            <h2>Dress Code</h2>
+            <p>Formal - Blanco</p>
         </section>
 
-        <!-- Playlist colaborativa -->
-        <section class="bg-white text-dark text-center p-4 mb-4 rounded shadow">
-            <h2>Colabora con nuestra playlist</h2>
-            <p>¡Ayúdanos a elegir la música de la boda! <a href="https://link-a-la-playlist.com" target="_blank">Colabora aquí</a></p>
+        <div class="secondary-box text-center shadow">
+            <div class="py-4">
+                    <div class="wedding-detail">
+                        <i class="fa-solid fa-calendar-days wedding-icon"></i>
+                        <h2 class="wedding-detail-title">Fecha</h2>
+                        <p>Te invitamos este 16 de noviembre de 2024 a las 11:00</p>
+                    </div>
+                    <button class="btn" onclick="toCalendar()">Agregalo a tu Calendario</button>
+            </div>
+
+            <hr>
+
+            <div class="py-4">
+                <div class="wedding-detail">
+                    <i class="fa-solid fa-location-dot wedding-icon"></i>
+                    <h2 class="wedding-detail-title" >Lugar</h2>
+                    <p>Unión de Ninquihue</p>
+                </div>
+                <button class="btn" onclick="toLocation()">Cómo Llegar</button>
+            </div>
+        </div>
+
+        <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel" data-bs-interval="2000">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="assets/photos/1.jpg" alt="Foto 1" class="d-block w-100">
+                </div>
+                <div class="carousel-item">
+                    <img src="assets/photos/6.jpg" alt="Foto 2" class="d-block w-100">
+                </div>
+                <div class="carousel-item">
+                    <img src="assets/photos/7.jpg" alt="Foto 3" class="d-block w-100">
+                </div>
+                <div class="carousel-item">
+                    <img src="assets/photos/8.jpg" alt="Foto 4" class="d-block w-100">
+                </div>
+                <div class="carousel-item">
+                    <img src="assets/photos/9.jpg" alt="Foto 5" class="d-block w-100">
+                </div>
+            </div>
+        </div>
+
+        <!-- Regalos -->
+        <section class="primary-box text-white text-center p-4 shadow">
+            <i class="fa-solid fa-gift pb-3"></i>
+            <h2>Regalos</h2>
+            <p>Su presencia es nuestro mejor regalo, pero si desean contribuir, agradecemos su ayuda en efectivo</p>
         </section>
 
-        <!-- Lugar del evento -->
-        <section class="bg-light text-dark text-center p-4 mb-4 rounded shadow">
-            <h2>Lugar del evento</h2>
-            <p>Parque Central, Ciudad de los Sueños</p>
-        </section>
+        <div class="secondary-box text-center shadow">
+            <!-- Playlist colaborativa -->
+            <div class="py-4">
+                <div class="wedding-detail">
+                    <i class="fa-brands fa-spotify wedding-icon"></i>
+                    <h2>Playlist</h2>
+                    <p>¡Ayúdanos a elegir la música de la boda!</p>
+                </div>
+                <button class="btn" onclick="toSpotify()">Colabora aquí</button>
+            </div>
 
-        <!-- Confirmar participación -->
-        <section class="text-center p-4">
-            <a href="https://formulario-de-confirmacion.com" class="btn btn-lg btn-custom">Confirmar Asistencia</a>
-        </section>
+            <hr>
 
+            <div class="py-4">
+                <i class="fa-regular fa-address-book wedding-icon"></i>
+                <div class="wedding-detail">
+                    <h2>¿Vienes?</h2>
+                </div>
+                <button class="btn" onclick="toForm()">Confirma asistencia</button>
+            </div>
+    
+        </div>
+
+        <!-- Footer -->
+        <footer class="text-white text-center p-4">
+            <a href="mailto:catanplaza@gmail.com"><i class="fa-regular fa-envelope clickable"></i> </a>
+            <a href="https://wa.me/56976034574"><i class="fa-brands fa-whatsapp clickable"></i></a>
+            <br>
+            <span>Nos puedes contactar</span>
+        </footer>
     </div>
 
-    <!-- Footer -->
-    <footer class="bg-dark text-white text-center p-4 mt-4">
-        <p>Contacto de los novios:</p>
-        <p>novio@correo.com | novia@correo.com</p>
-    </footer>
-
     <script src="countdown.js"></script>
+    <script src="redirect.js"></script>
+    <script>
+        function myFunction() {
+          window.open("https://www.w3schools.com");
+        }
+        </script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
