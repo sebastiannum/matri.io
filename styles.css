@@ -50,6 +50,11 @@ body{
     background-color: #877070;
 }
 
+.secondary-box button:hover{
+  color: white;
+  background-color: #9a6f9d;
+}
+
 .secondary-box hr{
   margin: auto;
   width: 84%;
