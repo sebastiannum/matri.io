@@ -4,13 +4,13 @@ body{
 }
 
 .god-box{
-  margin: 1rem auto auto !important;
   box-shadow: rgb(0 0 0 / 20%) 8px 8px 29px 20px;
   display:block;
 }
 
 @media screen and (min-width: 1024px) {
   .god-box {
+    margin: 1rem auto auto !important;
     max-width: 50%;
   }
 }
