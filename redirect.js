@@ -11,5 +11,5 @@ function toLocation() {
 }
 
 function toCalendar(){
-    window.open("https://calendar.app.google/f5qFtRn17re9Xkiq6");
+    window.open("https://calendar.google.com/calendar/share?slt=1AUWfa3hKCJRy1yRsqRXT9qzdB-w5_O_chv0Rb_6I88fAGLFbM8EPDOix8siZAO7PzBrITZ06oXXzGQ ");
 }
